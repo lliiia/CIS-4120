@@ -2,17 +2,13 @@
 
 A static, phone-sized HTML/CSS mock of the redesigned Path@Penn course description screen.
 
-## Demo
-If GitHub Pages is enabled:
-https://<your-username>.github.io/pathatpenn-hifi-openingscreen/
-
 ## Run locally
-Just open `index.html` in any modern browser.
+Open `index.html` in any browser.
 
 ## Tech
 - Pure HTML/CSS
-- Google Fonts: Montserrat, Open Sans
-- Conic-gradient pie for capacity (5/30 available)
+- Google Fonts: Arial, Helvetica, sans-serif
+- Conic-gradient pie for seat availability
 - Penn colors (navy/red) and CTA pills
 
 ## Notes

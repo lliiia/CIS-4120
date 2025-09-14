@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Path@Penn - Course Detail</title>
+
+  <style>
+    :root {
+      --penn-navy:#011F5B;
+      --penn-red:#990000;
+      --btn-blue:#2E32D1;
+      --ink:#141518;
+      --bg:#f7f7fb;
+      --divider:#e5e7eb;
+    }
+    * { box-sizing:border-box; }
+    body, html {
+      margin:0; padding:0; background:var(--bg);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .frame {
+      width:390px; height:844px; margin:24px auto;
+      border:2px solid #111; border-radius:38px;
+      overflow:hidden; background:#fff;
+      position:relative;
+    }
+    .pennbar {
+      background:var(--penn-navy); color:#fff;
+      display:flex; justify-content:space-between; align-items:center;
+      padding:10px 16px;
+    }
+    .pennbar img {
+        height: 35px;
+        width: auto;
+    }
+    .pennbar .login { font-weight:bold; font-size:14px; }
+
+    .coursebar {
+      background:var(--penn-red); color:#fff;
+      display:flex; justify-content:space-between; align-items:center;
+      padding:8px 14px;
+      font-weight:bold; font-size:16px;
+    }
+    .coursebar .left {
+      display:flex; align-items:center; gap:8px;
+    }
+    .coursebar img { height:18px; }
+
+    .screen {
+      padding:16px;
+      height:calc(100% - 120px); /* minus bars and buttons */
+      overflow:auto;
+    }
+    .title-row {
+      display:flex; justify-content:space-between; align-items:center;
+    }
+    .title-row h1 {
+      font-size:22px; font-weight:bold; margin:0;
+    }
+    .icons-inline { display:flex; gap:12px; }
+    .icons-inline img { height:24px; }
+
+    .section-link { font-size:14px; color:#1b3aa0; text-decoration:underline; }
+
+    h2 {
+      margin-top:12px; margin-bottom:8px;
+      font-size:20px; font-weight:bold;
+    }
+
+    .row {
+      display:flex; align-items:flex-start; gap:14px; margin-top:10px;
+    }
+    .meta {
+      font-size:14px; line-height:1.4;
+    }
+    .capacity {
+      margin-left:auto; text-align:center; font-size:12px;
+    }
+    .pie {
+      width:92px;height:92px;border-radius:50%;
+      background: conic-gradient(var(--penn-red) 0 300deg, #e6e7ee 300deg 360deg);
+      border:6px solid #fff; box-shadow:0 0 0 1px #e5e7eb inset;
+      margin:4px auto 6px;
+    }
+
+    .link-buttons {
+      margin:14px 0 10px;
+      display:flex; gap:12px;
+    }
+    .link-buttons a {
+      flex:1;
+      background:var(--btn-blue); color:#fff;
+      padding:10px; text-align:center;
+      border-radius:10px; font-weight:bold;
+      text-decoration:none;
+      font-size:14px;
+    }
+
+    .section-heading {
+      font-weight:bold; font-size:13px; letter-spacing:.3px;
+      color:#2b3b68; background:#eef1f8;
+      padding:6px 10px; border-radius:6px;
+      margin-top:12px;
+    }
+
+    .desc {
+      font-size:14px; line-height:1.5; margin-top:8px;
+    }
+
+    .cta-row {
+      position:absolute; left:16px; right:16px; bottom:20px;
+      display:flex; gap:12px;
+    }
+    .cta-row a {
+        flex:1;
+        display:inline-block;
+        text-align:center;
+        text-decoration:none;
+        background:var(--btn-blue);
+        color:#fff;
+        padding:14px;
+        border-radius:14px;
+        font-size:16px;
+        font-weight:bold;
+        cursor:pointer;
+        transition:background 0.2s ease;
+    }
+    .cta-row a:hover {
+        background:#1f24a0; /* darker blue on hover */
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <!-- Penn top bar -->
+    <div class="pennbar">
+      <img src="Penn Logo.png" alt="Penn Logo" />
+      <div class="login">Login</div>
+    </div>
+
+    <!-- Red course header -->
+    <div class="coursebar">
+      <div class="left">
+        <img src="back-triangle.png" alt="Back" />
+        <div>MATH 4100</div>
+      </div>
+      <div class="right">
+        <img src="home icon.png" alt="Home" />
+      </div>
+    </div>
+
+    <!-- Body -->
+    <div class="screen">
+      <div class="title-row">
+        <h1>MATH 4100</h1>
+        <div class="icons-inline">
+          <img src="shopping cart.png" alt="In Cart" />
+          <img src="bookmark.png" alt="Bookmark" />
+        </div>
+      </div>
+
+      <a class="section-link" href="#">Section 401, CRN 63269</a>
+
+      <h2>Complex Analysis</h2>
+
+      <div class="row">
+        <div class="meta">
+          Last Updated: 9/13/2025, 10:12:11 PM<br/>
+          Section Status: Active<br/>
+          Schedule Type: Lecture<br/>
+          Instruction Method: In Class<br/>
+          Campus: Philadelphia<br/>
+          Credit: 1
+        </div>
+
+        <div class="capacity">
+          <div class="pie"></div>
+          <div><strong>5/30 Available</strong></div>
+        </div>
+      </div>
+
+      <div class="link-buttons">
+        <a href="#">Penn Course Review</a>
+        <a href="#">Penn Course Alert</a>
+      </div>
+
+      <div class="section-heading">COURSE DESCRIPTION</div>
+      <div class="desc">
+        Complex numbers, DeMoivre's theorem, complex valued functions of a complex variable, 
+        the derivative, analytic functions, the Cauchy-Riemann equations, complex integration, 
+        Cauchy's integral theorem, residues, computation of definite integrals by residues, 
+        and elementary conformal mapping.
+      </div>
+    </div>
+
+    <!-- CTAs -->
+    <div class="cta-row">
+        <a href="#" class="cta">Add to Plan</a>
+        <a href="#" class="cta">Add to Cart</a>
+    </div>
+  </div>
+</body>
+</html>

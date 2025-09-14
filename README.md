@@ -13,3 +13,4 @@ Open `index.html` in any browser.
 
 ## Notes
 This is a static mock; there is no JS or interaction. It is sized to 390×844 (iPhone 12-ish) and wrapped in a phone frame.
+Used ChatGPT to generate the color palette and identify the fonts.
